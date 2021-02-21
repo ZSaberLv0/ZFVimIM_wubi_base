@@ -22,9 +22,8 @@ wubi db file for [ZSaberLv0/ZFVimIM](https://github.com/ZSaberLv0/ZFVimIM)
     once configured, any changes would be pushed with the specified git user info
     (make sure you have push permission)
 
+
 # add your own db
 
-see [plugin/ZFVimIM_wubi.vim](https://github.com/ZSaberLv0/ZFVimIM_wubi_base/blob/master/plugin/ZFVimIM_wubi.vim)
-
-also, see [ZSaberLv0/ZFVimIM#cloud-input](https://github.com/ZSaberLv0/ZFVimIM#cloud-input) for more info
+refer to [ZSaberLv0/ZFVimIM](https://github.com/ZSaberLv0/ZFVimIM#make-your-own-db) for more info
 
