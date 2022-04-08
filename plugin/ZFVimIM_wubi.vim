@@ -6,15 +6,20 @@ function! s:dbInit()
 
     let db = ZFVimIM_dbInit({
                 \   'name' : 'wubi',
+                \   'priority' : -1,
+                \   'switchable' : 1,
+                \   'editable' : 1,
+                \   'menuLabel' : 0,
                 \ })
     call ZFVimIM_cloudRegister({
+                \   'mode' : 'git',
+                \   'dbId' : db['dbId'],
                 \   'repoPath' : repoPath,
                 \   'dbFile' : dbFile,
                 \   'dbCountFile' : dbCountFile,
                 \   'gitUserEmail' : get(g:, 'ZFVimIM_wubi_gitUserEmail', get(g:, 'zf_git_user_email', '')),
                 \   'gitUserName' : get(g:, 'ZFVimIM_wubi_gitUserName', get(g:, 'zf_git_user_name', '')),
                 \   'gitUserToken' : get(g:, 'ZFVimIM_wubi_gitUserToken', get(g:, 'zf_git_user_token', '')),
-                \   'dbId' : db['dbId'],
                 \ })
 endfunction
 
